@@ -1,0 +1,19 @@
+<h1>Chat Room</h1>
+<div id="messages">
+  <%= render @messages %>
+</div>
+
+<form action="">
+  <label for="">Say something:</label>
+  <input type="text" data-behavior="room_speaker">
+</form>
+
+<div id="1234get">haha</div>
+
+<button id="send">send</button>
+
+<script type="text/javascript" charset="utf-8">
+  $("#send").click(function () {
+      App.room.speak('tomake ami chuma dite chai');
+  })
+</script>
